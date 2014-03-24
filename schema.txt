@@ -1,0 +1,12 @@
+create keyspace shippableDemo
+    with placement_strategy = 'org.apache.cassandra.locator.SimpleStrategy'
+    and strategy_options = [{replication_factor:1}];
+use shippableDemo;
+
+create column family users
+    with comparator = UTF8Type
+    and key_validation_class = UTF8Type
+    and column_metadata = [
+         {column_name: full_name, validation_class: UTF8Type}
+         {column_name: email, validation_class: UTF8Type}
+    ];
