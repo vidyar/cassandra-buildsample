@@ -6,6 +6,7 @@ services:
 install:
   - gem install cassandra
 
+
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
   - ruby sample.rb
