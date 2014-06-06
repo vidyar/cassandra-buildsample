@@ -6,7 +6,7 @@ services:
 install:
   - gem install cassandra
 rvm:
-  - 2.1.1
+  - 1.9.3
 
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
