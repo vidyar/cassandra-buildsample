@@ -8,6 +8,8 @@ install:
 rvm:
   - 1.9.3
 
+
+
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
   - ruby sample.rb
