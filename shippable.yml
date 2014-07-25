@@ -6,7 +6,7 @@ services:
 install:
   - gem install cassandra
 rvm:
-  - 1.9.3
+  - 1.9.2
 
 
 
