@@ -5,6 +5,7 @@ services:
 
 install:
   - gem install cassandra
+
 rvm:
   - 1.9.2
 #build_image: shippable/minv2:beta
