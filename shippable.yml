@@ -7,7 +7,7 @@ install:
   - gem install cassandra
 rvm:
   - 1.9.2
-build_image: shippable/minv2:beta
+#build_image: shippable/minv2:beta
 
 script:
   - cassandra-cli -host localhost -port 9160 -f schema.txt
