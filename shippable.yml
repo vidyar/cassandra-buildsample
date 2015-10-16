@@ -16,3 +16,5 @@ script:
   - cassandra-cli -host localhost -port 9160 -f removeKeyspace.txt
 
 build_image: shippable/minv2
+
+cache: true
